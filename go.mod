@@ -2,13 +2,13 @@ module github.com/hashicorp/vault
 
 go 1.17
 
-replace github.com/bchoates/vault/api => ./api
+replace github.com/hashicorp/vault/api => ./api
 
-replace github.com/bchoates/vault/api/auth/approle => ./api/auth/approle
+replace github.com/hashicorp/vault/api/auth/approle => ./api/auth/approle
 
-replace github.com/bchoates/vault/api/auth/userpass => ./api/auth/userpass
+replace github.com/hashicorp/vault/api/auth/userpass => ./api/auth/userpass
 
-replace github.com/bchoates/vault/sdk => ./sdk
+replace github.com/hashicorp/vault/sdk => ./sdk
 
 replace go.etcd.io/etcd/client/pkg/v3 v3.5.0 => go.etcd.io/etcd/client/pkg/v3 v3.0.0-20210928084031-3df272774672
 
@@ -115,6 +115,10 @@ require (
 	github.com/hashicorp/vault-plugin-secrets-openldap v0.7.1
 	github.com/hashicorp/vault-plugin-secrets-terraform v0.4.0
 	github.com/hashicorp/vault-testing-stepwise v0.1.2
+	github.com/hashicorp/vault/api v1.5.0
+	github.com/hashicorp/vault/api/auth/approle v0.1.0
+	github.com/hashicorp/vault/api/auth/userpass v0.1.0
+	github.com/hashicorp/vault/sdk v0.4.2-0.20220426194706-f8e907e0deda
 	github.com/influxdata/influxdb1-client v0.0.0-20200827194710-b269163b24ab
 	github.com/jcmturner/gokrb5/v8 v8.4.2
 	github.com/jefferai/isbadcipher v0.0.0-20190226160619-51d2077c035f
@@ -192,10 +196,6 @@ require (
 	github.com/Microsoft/hcsshim v0.9.0 // indirect
 	github.com/StackExchange/wmi v1.2.1 // indirect
 	github.com/andybalholm/brotli v1.0.4 // indirect
-	github.com/hashicorp/vault/api v1.5.0
-	github.com/hashicorp/vault/api/auth/approle v0.1.1
-	github.com/hashicorp/vault/api/auth/userpass v0.1.0
-	github.com/hashicorp/vault/sdk v0.4.2-0.20220426194706-f8e907e0deda
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/nwaples/rardecode v1.1.2 // indirect
 	github.com/petermattis/goid v0.0.0-20180202154549-b0b1615b78e5 // indirect
